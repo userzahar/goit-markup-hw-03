@@ -12,10 +12,17 @@ body {
     font-size: 14px; 
     letter-spacing: 0.03em; 
     background-color: #ffffff;} 
-    .list { list-style: none;}
+    .list { list-style: none; padding: 0; margin: 0;}
     .link {text-decoration: none;}
     .hiden {visibility: hidden;}
     .link.current {color:var(--accent-color)}
+html {box-sizing: border-box;}
+*,
+*::before,
+*::after {box-sizing: inherit;}
+
+.container {margin: 0 auto; padding: 0 15px; width: 1200px;}
+.margin-none {margin: 0}
 /*  header */
 .header-nav {color:var(--contrast-color);}
 .logo {
@@ -23,7 +30,9 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2; 
-    font-family:'Raleway', sans-serif;}
+    font-family:'Raleway', sans-serif;
+    display: inline-block;
+    margin-bottom: 25px;}
 .logo-header {color: var(--pure-black-color);}
 .nav-items, 
 .cantacts-mail, 
@@ -40,15 +49,16 @@ body {
 .contacts-tel:focus { color:var(--accent-color);}
 /* main головної сторінки */
 /* hero */
-.hero {background-color:var(--background-color);}
+.hero {background-color:var(--background-color); text-align: center; min-height: 600px;}
 .hero-title {
     color:var(--pure-white-color); 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4; 
-    text-align: center; 
     letter-spacing: 0.06em; 
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    padding-top: 200px;
+    margin-bottom: 30px;}
 .hero-btn {
     background-color: var(--accent-color);
     color: var(--pure-white-color); 
@@ -58,15 +68,21 @@ body {
     text-align: center; 
     letter-spacing: 0.06em; 
     cursor: pointer; 
-    font-family: inherit;}
+    font-family: inherit;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    border-color: var(--accent-color);}
 /* секція як ми працюємо */
 
-
+.section-descr>.container {padding: 94px 15px;}
 .descr-item {
     text-transform: uppercase; 
     color:var(--contrast-color) ; 
     font-weight: 700; font-size: 14px;
-    line-height: 1.2;}
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
 .item-text {
     line-height: 1.7;}
 /* секція наша команда */
@@ -82,7 +98,8 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2; 
-    text-align: center;} 
+    text-align: center;
+    margin-bottom: 50px;} 
 .title, 
 .team-member {color: var(--contrast-color);}
 /* footer */
