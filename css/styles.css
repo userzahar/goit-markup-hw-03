@@ -23,7 +23,9 @@ html {box-sizing: border-box;}
 *::after {box-sizing: inherit;}
 .no-gap {display: block;}
 .container {margin: 0 auto; padding: 0 15px; width: 1200px;}
-.margin-none,
+.margin-none, 
+.hiden,
+.project-title,
  h3,
  p {margin: 0;}
 /*  header */
@@ -154,6 +156,10 @@ html {box-sizing: border-box;}
 .address-mail:focus, 
 .address-tel:focus {color: var(--accent-color);}
 /* портфоліо */
+.project>.container {
+    padding-top: 94px;
+    padding-bottom: 114px;}
+
 /* фільтри */
 .filter-btn {
     background-color: var(--separation-color);
@@ -162,19 +168,23 @@ html {box-sizing: border-box;}
     font-size: 16px;
     line-height: 1.6; 
     cursor: pointer; 
-    font-family: inherit;}
+    font-family: inherit;
+    margin-bottom: 50px;}
 .filter-btn:hover {
     background-color: var(--accent-color); 
     color: var(--pure-white-color);}
 .filter-btn:focus {background-color: var(--accent-color); 
     color: var(--pure-white-color);}
 /* проєкти */
+.project-image {display: block;
+     margin-bottom: 20px;}
 .project-title { 
     color:var(--contrast-color); 
     font-weight: 700;
     font-size: 18px;
     line-height: 2; 
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;}
 .title-descr {
     font-size: 16px;
     line-height: 1.9; 
