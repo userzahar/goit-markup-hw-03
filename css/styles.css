@@ -15,16 +15,22 @@ body {
     .list { list-style: none; padding: 0; margin: 0;}
     .link {text-decoration: none;}
     .hiden {visibility: hidden;}
-    .link.current {color:var(--accent-color)}
+    .link.current {color:var(--accent-color);}
 html {box-sizing: border-box;}
 *,
 *::before,
 *::after {box-sizing: inherit;}
 
 .container {margin: 0 auto; padding: 0 15px; width: 1200px;}
-.margin-none {margin: 0}
+.margin-none,
+ h3,
+ p {margin: 0;}
 /*  header */
 .header-nav {color:var(--contrast-color);}
+.header.container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .logo {
     color: var(--accent-color); 
     font-weight: 700;
@@ -32,7 +38,7 @@ html {box-sizing: border-box;}
     line-height: 1.2; 
     font-family:'Raleway', sans-serif;
     display: inline-block;
-    margin-bottom: 25px;}
+    margin-bottom: 20px;}
 .logo-header {color: var(--pure-black-color);}
 .nav-items, 
 .cantacts-mail, 
@@ -49,7 +55,10 @@ html {box-sizing: border-box;}
 .contacts-tel:focus { color:var(--accent-color);}
 /* main головної сторінки */
 /* hero */
-.hero {background-color:var(--background-color); text-align: center; min-height: 600px;}
+.hero {background-color:var(--background-color); text-align: center;}
+.hero>.container { 
+    padding-top: 200px ;
+    padding-bottom: 280px;}
 .hero-title {
     color:var(--pure-white-color); 
     font-weight: 900;
@@ -57,7 +66,6 @@ html {box-sizing: border-box;}
     line-height: 1.4; 
     letter-spacing: 0.06em; 
     text-transform: uppercase;
-    padding-top: 200px;
     margin-bottom: 30px;}
 .hero-btn {
     background-color: var(--accent-color);
@@ -73,9 +81,11 @@ html {box-sizing: border-box;}
     height: 50px;
     border-radius: 4px;
     border-color: var(--accent-color);}
-/* секція як ми працюємо */
 
-.section-descr>.container {padding: 94px 15px;}
+    /* секція як ми працюємо */
+.section-descr>.container {
+    padding-top: 94px;
+    padding-bottom: 94px;}
 .descr-item {
     text-transform: uppercase; 
     color:var(--contrast-color) ; 
@@ -85,15 +95,24 @@ html {box-sizing: border-box;}
 }
 .item-text {
     line-height: 1.7;}
+
+    /* чим ми займаємось */
+.section-direction>.container { padding-bottom: 94px;}
+
 /* секція наша команда */
 .team  {background-color: var(--separation-color);}
+.team>.container {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+    .photo {margin-bottom: 30px;}
 .member-profession {
     font-size: 16px;
     line-height: 1.2;}
 .team-member {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;}
+    line-height: 1.2;
+    margin-bottom: 10px;}
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -102,7 +121,12 @@ html {box-sizing: border-box;}
     margin-bottom: 50px;} 
 .title, 
 .team-member {color: var(--contrast-color);}
+.title.margin-none {margin-bottom: 50px;}
+
 /* footer */
+.footer>.container {
+    padding-top: 60px;
+    padding-bottom: 60px;}
 .logo-footer {color: var(--pure-white-color);}
 .address {font-style:normal}
  .address-map {
