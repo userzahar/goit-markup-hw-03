@@ -56,13 +56,17 @@ html {box-sizing: border-box;}
 .contacts-tel:focus { color:var(--accent-color);}
 /* main головної сторінки */
 /* hero */
-.hero {background-color:var(--background-color); text-align: center;}
-.hero>.container { 
+.hero {background-color:var(--background-color); 
+    text-align: center;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 280px;}
+/* .hero>.container { 
     padding-top: 200px ;
     padding-bottom: 280px;
     text-align: center;
     padding-left: 270px;
-    padding-right: 270px;}
+    padding-right: 270px;} */
 .hero-title {
     color:var(--pure-white-color); 
     font-weight: 900;
@@ -70,7 +74,8 @@ html {box-sizing: border-box;}
     line-height: 1.4; 
     letter-spacing: 0.06em; 
     text-transform: uppercase;
-    margin-bottom: 30px;}
+    margin: 0 auto 30px;
+    width: 696px;}
 .hero-btn {
     background-color: var(--accent-color);
     color: var(--pure-white-color); 
