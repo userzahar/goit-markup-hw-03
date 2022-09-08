@@ -6,6 +6,7 @@
 --pure-black-color:#000000;
 --pure-white-color:#ffffff;
 --transparent-white:#FFFFFF99; } 
+* {outline: 2px solid green}
 body {
     color: var(--primary-text-color); 
     font-family: 'Roboto', sans-serif;
@@ -129,6 +130,7 @@ html {box-sizing: border-box;}
     padding-bottom: 60px;}
 .logo-footer {color: var(--pure-white-color);}
 .address {font-style:normal}
+.address li {margin-bottom: 9px;}
  .address-map {
     color:var(--pure-white-color);
     line-height: 1.7;}
