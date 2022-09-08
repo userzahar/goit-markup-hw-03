@@ -59,7 +59,10 @@ html {box-sizing: border-box;}
 .hero {background-color:var(--background-color); text-align: center;}
 .hero>.container { 
     padding-top: 200px ;
-    padding-bottom: 280px;}
+    padding-bottom: 280px;
+    text-align: center;
+    padding-left: 270px;
+    padding-right: 270px;}
 .hero-title {
     color:var(--pure-white-color); 
     font-weight: 900;
