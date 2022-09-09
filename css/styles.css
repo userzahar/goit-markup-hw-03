@@ -115,6 +115,7 @@ margin-left: 50px;
 .section-descr>.container {
     padding-top: 94px;
     padding-bottom: 94px;}
+    .section-descr .list {justify-content: space-between;}
 .descr-item {
     text-transform: uppercase; 
     color:var(--contrast-color) ; 
