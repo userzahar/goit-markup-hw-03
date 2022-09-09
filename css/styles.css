@@ -5,8 +5,9 @@
 --background-color:#2F303A;
 --pure-black-color:#000000;
 --pure-white-color:#ffffff;
---transparent-white:#FFFFFF99; } 
-* {outline: 2px solid green}
+--transparent-white:#FFFFFF99;
+--border-color: rgba(238, 238, 238, 1); } 
+/* * {outline: 2px solid green} */
 body {
     color: var(--primary-text-color); 
     font-family: 'Roboto', sans-serif;
@@ -137,7 +138,14 @@ margin-left: 50px;
     padding-top: 94px;
     padding-bottom: 94px;}
 .team .list {justify-content: space-between;}
-.team-items {background-color: var(--pure-white-color);}
+.team-items {
+    background-color: var(--pure-white-color);
+    padding-bottom: 30px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+}
 .photo {margin-bottom: 30px;}
 .member-profession {
     font-size: 16px;
@@ -201,6 +209,21 @@ margin-left: 50px;
 /* проєкти */
 .project-image {display: block;
      margin-bottom: 20px;}
+.project-filter {
+    justify-content: center; 
+}
+.project-filter li+li {margin-left: 8px;}
+.project-list { 
+    flex-wrap: wrap;
+    gap:30px;
+    }
+.project-item { 
+    align-items: center;  
+    flex-direction: column;
+    /* border: 1px solid var(--border-color); */ 
+    /* flex-basis: calc((100% - 60px) /3);  */
+}
+
 .project-title { 
     color:var(--contrast-color); 
     font-weight: 700;
