@@ -115,7 +115,8 @@ margin-left: 50px;
 .section-descr>.container {
     padding-top: 94px;
     padding-bottom: 94px;}
-    .section-descr .list {justify-content: space-between;}
+.section-descr .list {justify-content: space-between;}
+.list .descr-list + .descr-list {margin-left: 30px;}
 .descr-item {
     text-transform: uppercase; 
     color:var(--contrast-color) ; 
@@ -128,13 +129,16 @@ margin-left: 50px;
 
     /* чим ми займаємось */
 .section-direction>.container { padding-bottom: 94px;}
+.section-direction .list {justify-content: space-between;}
 
 /* секція наша команда */
 .team  {background-color: var(--separation-color);}
 .team>.container {
     padding-top: 94px;
     padding-bottom: 94px;}
-    .photo {margin-bottom: 30px;}
+.team .list {justify-content: space-between;}
+.team-items {background-color: var(--pure-white-color);}
+.photo {margin-bottom: 30px;}
 .member-profession {
     font-size: 16px;
     line-height: 1.2;}
