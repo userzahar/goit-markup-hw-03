@@ -25,9 +25,8 @@ html {box-sizing: border-box;}
 *,
 *::before,
 *::after {box-sizing: inherit;}
-.no-gap {display: block;}
+img {display: block;}
 .container {margin: 0 auto; padding: 0 15px; width: 1200px;}
-
 .margin-none, 
 .hiden,
  h1,
@@ -57,7 +56,7 @@ html {box-sizing: border-box;}
 .logo-header {color: var(--pure-black-color);}
 .header-nav .nav-items + .nav-items {
 margin-left: 50px;}
-.nav-items.link {
+.nav-items.link, .cantacts-mail.link, .contacts-tel.link   {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -145,16 +144,17 @@ margin-left: 50px;}
 .team>.container {
     padding-top: 94px;
     padding-bottom: 94px;}
+    .name-and-profession{
+        padding: 30px 70px;
+    }
 .team .list {justify-content: space-between;}
 .team-items {
     background-color: var(--pure-white-color);
-    padding-bottom: 30px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     flex-direction: column;
     align-items: center;
 }
-.photo {margin-bottom: 30px;}
 .member-profession {
     font-size: 16px;
     line-height: 1.2;}
@@ -215,8 +215,6 @@ margin-left: 50px;}
 .filter-btn:focus {background-color: var(--accent-color); 
     color: var(--pure-white-color);}
 /* проєкти */
-.project-image {display: block;
-     margin-bottom: 20px;}
 .project-filter {
     justify-content: center; 
 }
@@ -228,9 +226,11 @@ margin-left: 50px;}
 .project-item { 
     align-items: center;  
     flex-direction: column;
-    padding-bottom: 30px;
     border-bottom: 1px solid var(--border-color); 
     flex-basis: calc((100% - 60px) /3); 
+}
+.project-descr { 
+    padding: 20px 24px;
 }
 
 .project-title { 
