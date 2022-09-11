@@ -13,18 +13,38 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px; 
     letter-spacing: 0.03em; 
-    background-color: #ffffff;} 
-    .list { list-style: none; padding: 0; margin: 0;}
-    .list.flex {margin-left: auto;}
-    .list.flex .list-item + .list-item {margin-left: 50px;}
-    .link {text-decoration: none;}
-    .hiden {visibility: hidden;}
-    .link.current {color:var(--accent-color);}
-html {box-sizing: border-box;}
-/* Утиліти */
+    background-color: #ffffff;}
 
+   
+.list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;}
+.list.flex {
+    margin-left: auto;}
+.list.flex .list-item + .list-item {margin-left: 50px;}
+ /* Утиліти */
+.link {text-decoration: none;}
+.link.current {color:var(--accent-color);}
+html {box-sizing: border-box;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
 img {display: block;}
-.container {margin: 0 auto; padding: 0 15px; width: 1200px;}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;}
 .margin-none, 
 .hiden,
  h1,
@@ -36,8 +56,13 @@ img {display: block;}
  header {border-bottom: 1px solid var(--border-color);}
 
 /*  header */
-.header-nav {color:var(--contrast-color); align-items: center;}
+.header-nav {
+    color:var(--contrast-color); 
+    align-items: center;
+    display: flex;
+}
 .header.container {
+    display: flex;
     align-items: center ;
     /* padding-top: 24px;
     padding-bottom: 25px; */
@@ -212,16 +237,16 @@ margin-left: 50px;}
     color: var(--pure-white-color);}
 /* проєкти */
 .project-filter {
+    display: flex;
     justify-content: center; 
 }
 .project-filter li+li {margin-left: 8px;}
 .project-list { 
+    display: flex;
     flex-wrap: wrap;
     gap:30px;
     }
 .project-item { 
-    align-items: flex-start;  
-    flex-direction: column;
     border-bottom: 1px solid var(--border-color); 
     flex-basis: calc((100% - 60px) /3); 
 }
