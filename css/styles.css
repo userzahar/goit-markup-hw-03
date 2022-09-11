@@ -145,9 +145,12 @@ margin-left: 50px;}
 }
 
     /* секція як ми працюємо */
-.section-descr>.container {
+    .section {     
+        padding-top: 94px;
+        padding-bottom: 94px;}
+/* .section-descr>.container {
     padding-top: 94px;
-    padding-bottom: 94px;}
+    padding-bottom: 94px;} */
 .section-descr .list {justify-content: space-between;}
 .list .descr-list + .descr-list {margin-left: 30px;}
 /* .list>.descr-list:not(:first-child) {margin-left: 30px;} */
@@ -162,14 +165,13 @@ margin-left: 50px;}
     line-height: 1.7;}
 
     /* чим ми займаємось */
-.section-direction>.container { padding-bottom: 94px;}
+/* .section-direction>.container { padding-bottom: 94px;} */
 .section-direction .list {justify-content: space-between;}
+.section-direction.section {padding-top: 0;}
 
 /* секція наша команда */
 .team  {background-color: var(--separation-color);}
-.team>.container {
-    padding-top: 94px;
-    padding-bottom: 94px;}
+
 .name-and-profession{
         padding: 30px 0px;    
 }
@@ -198,16 +200,20 @@ margin-left: 50px;}
 .title.margin-none {margin-bottom: 50px;}
 
 /* footer */
-.footer>.container {
+footer{
     padding-top: 60px;
     padding-bottom: 60px;}
-.logo-footer {color: var(--pure-white-color); margin-bottom: 20px; display: inline-flex;}
+footer .logo {
+    margin-bottom: 20px;
+}
+.logo-footer {color: var(--pure-white-color);  
+    display: inline-flex;}
 .address {font-style:normal}
-.address li {margin-bottom: 9px;}
+.address li:not(:last-child) {margin-bottom: 9px;}
  .address-map {
     color:var(--pure-white-color);
     line-height: 1.7;}
- .footer {background-color: var(--background-color);}
+ footer {background-color: var(--background-color);}
 .address-mail, 
 .address-tel {
     color: var(--transparent-white);
@@ -219,9 +225,7 @@ margin-left: 50px;}
 .address-mail:focus, 
 .address-tel:focus {color: var(--accent-color);}
 /* портфоліо */
-.project>.container {
-    padding-top: 94px;
-    padding-bottom: 94px;}
+
 
 /* фільтри */
 .filter-btn {
@@ -231,8 +235,7 @@ margin-left: 50px;}
     font-size: 16px;
     line-height: 1.6; 
     cursor: pointer; 
-    font-family: inherit;
-    margin-bottom: 50px;}
+    font-family: inherit;}
 .filter-btn:hover {
     background-color: var(--accent-color); 
     color: var(--pure-white-color);}
@@ -240,6 +243,7 @@ margin-left: 50px;}
     color: var(--pure-white-color);}
 /* проєкти */
 .project-filter {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center; 
 }
@@ -251,11 +255,13 @@ margin-left: 50px;}
     gap:30px;
     }
 .project-item { 
-    border-bottom: 1px solid var(--border-color); 
     flex-basis: calc((100% - 60px) /3); 
 }
 .project-descr { 
     padding: 20px 24px;
+    border-left: 1px solid var(--border-color); 
+    border-right: 1px solid var(--border-color); 
+    border-bottom: 1px solid var(--border-color);
 }
 
 .project-title { 
