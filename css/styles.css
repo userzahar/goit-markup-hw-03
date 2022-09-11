@@ -125,7 +125,7 @@ margin-left: 50px;}
     text-transform: uppercase;
     margin-bottom: 30px;
     width: 696px;
-
+/*  margin: 0 auto 30 auto */
 }
 .hero-btn {
     background-color: var(--accent-color);
@@ -140,7 +140,9 @@ margin-left: 50px;}
     width: 216px;
     height: 50px;
     border-radius: 4px;
-    border-color: var(--accent-color);}
+    border-color: var(--accent-color);
+    /* margin: 0 auto 0 auto */
+}
 
     /* секція як ми працюємо */
 .section-descr>.container {
@@ -148,6 +150,7 @@ margin-left: 50px;}
     padding-bottom: 94px;}
 .section-descr .list {justify-content: space-between;}
 .list .descr-list + .descr-list {margin-left: 30px;}
+/* .list>.descr-list:not(:first-child) {margin-left: 30px;} */
 .descr-item {
     text-transform: uppercase; 
     color:var(--contrast-color) ; 
@@ -241,6 +244,7 @@ margin-left: 50px;}
     justify-content: center; 
 }
 .project-filter li+li {margin-left: 8px;}
+/* .project-filter>li:not(:first-child) {margin-left: 8px;} */
 .project-list { 
     display: flex;
     flex-wrap: wrap;
