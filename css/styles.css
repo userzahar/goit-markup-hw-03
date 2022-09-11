@@ -22,9 +22,7 @@ body {
     .link.current {color:var(--accent-color);}
 html {box-sizing: border-box;}
 /* Утиліти */
-*,
-*::before,
-*::after {box-sizing: inherit;}
+
 img {display: block;}
 .container {margin: 0 auto; padding: 0 15px; width: 1200px;}
 .margin-none, 
