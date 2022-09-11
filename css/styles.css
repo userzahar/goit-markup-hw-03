@@ -235,7 +235,10 @@ footer .logo {
     font-size: 16px;
     line-height: 1.6; 
     cursor: pointer; 
-    font-family: inherit;}
+    font-family: inherit;
+    border: 1px solid var(--separation-color); 
+    border-radius: 4px;
+}
 .filter-btn:hover {
     background-color: var(--accent-color); 
     color: var(--pure-white-color);}
